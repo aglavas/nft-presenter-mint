@@ -1,0 +1,178 @@
+.card {
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 0px;
+    cursor: pointer;
+    box-shadow:  8px 8px 16px #d9d9d9,
+               -8px -8px 16px #ffffff;
+}
+
+.photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.modal-photo-dimensions {
+    width: 400;
+    height: 400;
+}
+
+.name {
+    font-size: 12px;
+    font-weight: bold;
+    display: inline;
+}
+
+.name-wrapper {
+    float: left;
+    padding-left: 10px;
+}
+
+.copy-count-wrapper {
+    float: right;
+    padding-right: 10px;
+}
+
+.collection-text {
+    text-align: left;
+    font-size: 12px;
+    color: gray;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+.subtitle {
+    color: gray;
+    margin-top: 0;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    
+    @media(max-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(max-width: 900px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media(max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+
+/* //////Modal//////////// */
+
+.attribute-wrapper {
+    margin: 10px 0px 5px 0px;
+}
+
+.modal-text {
+    color: gray;
+    margin: 0;
+    display: inline;
+}
+
+.modal-close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 25px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.modal-paragraph {
+    margin: 0 0 15px 0;
+}
+
+.modal-section {
+    margin: 5px 0 5px 0;
+}
+
+.modal-grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    @media(max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.modal-content {
+    text-align: left;
+    position: relative;
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    @media(max-width: 900px) {
+      width: 400px;
+    }
+}
+
+.progress-bar-inner {
+    background-color: #0077ff;
+    width: 40%;
+    height: 10px;
+    border-radius: 7px;
+}
+
+.progress-bar-outer {
+    background-color: lightgray;
+    border-radius: 13px;
+    padding: 3px;
+}
